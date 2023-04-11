@@ -1,11 +1,6 @@
 function solution(s) {
     let str = s.toUpperCase().split(" ");
-    let answer = str.map(i => {
-        let word = i.split("").map((val, idx) => {
-            return idx%2 ? val = val.toLowerCase() : val
-        })
-        return word.join("")
-    })
-    return answer.join(" ")
-
+    str =  str.map((val)=> val.split("").map((val2,idx2) => {
+        return idx2%2 ? val2.toLowerCase() : val2}).join("")).join(" ")
+    return str       
 }
