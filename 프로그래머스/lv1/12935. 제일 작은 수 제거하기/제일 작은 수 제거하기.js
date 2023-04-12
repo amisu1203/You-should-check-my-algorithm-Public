@@ -1,8 +1,7 @@
 function solution(arr) {
     let min = Math.min(...arr)
     if (arr.length > 1) {
-        let answer = arr.filter(val => val !== min)
-        return answer;
+        return arr.filter(val => val !== min)
     }
     else return [-1]
 }
